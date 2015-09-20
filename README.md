@@ -1,7 +1,7 @@
 # backscatter
 A reactive library for Backbone
 
-Backscatter is a small library that notifies you of changes _anywhere_ in your Backbone model tree, no matter how deep-nested they are. It's a great companion to React, since it enables you to carelessly trigger refreshes of your entire React tree whenever one or more base model(s) or their nested Models/Collections change.
+Backscatter is a small library that notifies you of changes _anywhere_ in your Backbone model tree, no matter how deeply-nested they are. It's a great companion to React, since it enables you to carelessly trigger refreshes of your entire React tree whenever one or more base model(s) or their nested Models/Collections change.
 
 ## Installation
 
@@ -24,6 +24,10 @@ An extension of Backbone's native Model and Collection which contains "**backsca
 ### backscatterOn(handler)
 
 `handler` will be called whenever the Model/Collection `backscatterOn` is invoked on or any of its decendants (close or remote) trigger an 'all' event.
+
+The arguments passed to `handler` are Backbone's original 'all' event-handler arguments (target, event name etc.)
+
+_`handler` might be triggered several times sequently. For instance: Models that are members of a collection will trigger one event for the model, and another for the collection they're in, both will be intercepted by `handler`. Since you may be interested only in one of them, you can use underscore ".debounce()"_
 
 ### backscatterOff(handler)
 
