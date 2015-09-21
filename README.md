@@ -67,12 +67,12 @@ D.backscatterOn(_.debounce(function(...[target, name]){
 
 // Perform a change somewhere in your model, and let backscatter react
 setTimeout(function(){
-    // Let's touch our model somewhere in a deep nested location
+    // Let's touch our model somewhere in a deeply nested location
     A.set({ "title": `Hello` })
 }, 1000);
 
 setTimeout(function(){
-    // Let's touch our model somewhere else in a deep nested location
+    // Let's touch our model somewhere else in a deeply nested location
     B.set({ "name": `Mark Smith` })
 }, 2000);
 
