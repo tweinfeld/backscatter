@@ -33,7 +33,11 @@ _`handler` might be triggered several times sequently. For instance: Models that
 
 Removes the binding to `handler'. It's best to call this when the view hosting your react component dies.
 
-## Example
+## Examples
+
+Check out our [TodoMVC Project](https://github.com/tweinfeld/backscatter-todomvc).
+
+Or:
 
 ```javascript
 import _ from 'underscore';
