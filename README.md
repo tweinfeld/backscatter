@@ -1,5 +1,5 @@
 # backscatter
-A reactive library for Backbone
+A reactive extension for Backbone Models
 
 Backscatter is a small Backbone extension that notifies you of events _anywhere_ in your Backbone model tree, no matter how deeply-nested they are. It's a great companion to React, since it enables you to carelessly trigger refreshes of your entire React tree whenever one or more base model(s) or their nested members change.
 
