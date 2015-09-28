@@ -35,7 +35,7 @@ Removes the binding to `handler'. It's best to call this when the view hosting y
 
 ## Examples
 
-Check out our [TodoMVC Project](https://github.com/tweinfeld/backscatter-todomvc).
+Check out Backscatter's [TodoMVC Project](https://github.com/tweinfeld/backscatter-todomvc).
 
 Or:
 
